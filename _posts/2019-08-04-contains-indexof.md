@@ -29,14 +29,14 @@ public bool Contains( string value ) {
 }
 ```
 
+
 - IndexOf
 ```c#
 [Pure]
 public int IndexOf(String value) {
     return IndexOf(value, StringComparison.CurrentCulture);
 }
-
- [Pure]
+[Pure]
 [System.Security.SecuritySafeCritical]
 public int IndexOf(String value, int startIndex, int count, StringComparison comparisonType) {
     // Validate inputs
