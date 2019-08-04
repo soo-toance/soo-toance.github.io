@@ -30,8 +30,8 @@ public bool Contains( string value ) {
 ```
 
 - IndexOf
-```C#
- [Pure]
+```c#
+[Pure]
 public int IndexOf(String value) {
     return IndexOf(value, StringComparison.CurrentCulture);
 }
