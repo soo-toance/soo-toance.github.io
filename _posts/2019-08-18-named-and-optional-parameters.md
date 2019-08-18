@@ -13,7 +13,6 @@ tags:
 ## Reference
 
 - [스택 오버플로우](https://stackoverflow.com/questions/5262634/c-sharp-method-call-with-parameter-name-and-colon) 
-- [스택 오버플로우](https://stackoverflow.com/questions/5262634/c-sharp-method-call-with-parameter-name-and-colon) 
 - [마이크로소프트 문서](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)
 
 
