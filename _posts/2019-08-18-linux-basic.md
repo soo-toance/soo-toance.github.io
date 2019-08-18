@@ -3,8 +3,8 @@ title: "[linux] 명령어 모음zip"
 categories:
   - linux
 tags:
-  - 
-  - IndexOf
+  - selinux
+  - chmod
 ---
 
 Linux 명령어 모음zip
@@ -17,7 +17,7 @@ Linux 명령어 모음zip
 
 
 ## Concpet
-(1) 파일 관련 명령어
+###(1) 파일 관련 명령어
 
 1) 파일 권한 변경 명렁어
 ```
@@ -36,7 +36,7 @@ find -name ‘*.pl’
 ```
 
 
-(2) selinux 관련 명령어
+###(2) selinux 관련 명령어
 
 1) 권한 확인 명령어 
 ```
