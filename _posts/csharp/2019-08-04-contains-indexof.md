@@ -1,6 +1,7 @@
 ---
 permalink: /csharp/indexof-vs-contains
 title: "[C#] String.IndexOf과 String.Contains"
+comments: true
 categories:
   - csharp
 tags:

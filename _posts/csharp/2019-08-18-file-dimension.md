@@ -1,6 +1,7 @@
 ---
 permalink: /csharp/file-dimensions
 title: "[C#] 파일의 가로/세로 픽셀 계산"
+comments: true
 categories:
   - csharp
 tags:
