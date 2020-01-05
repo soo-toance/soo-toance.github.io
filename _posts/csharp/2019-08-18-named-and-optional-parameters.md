@@ -1,7 +1,8 @@
 ---
+permalink: /csharp/named-and-optional-parameters
 title: "[C#] 명명적 인수와 선택적 인수 (named and optional parameter)"
 categories:
-  - C#
+  - csharp
 tags:
   - named parameter
   - optional parameter

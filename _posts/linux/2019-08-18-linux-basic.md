@@ -1,4 +1,5 @@
 ---
+permalink: /linux/basic
 title: "[linux] 명령어 모음zip"
 categories:
   - linux

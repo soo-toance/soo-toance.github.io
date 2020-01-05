@@ -1,7 +1,8 @@
 ---
+permalink: /csharp/indexof-vs-contains
 title: "[C#] String.IndexOf과 String.Contains"
 categories:
-  - C#
+  - csharp
 tags:
   - Contains
   - IndexOf
