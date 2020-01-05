@@ -3,3 +3,5 @@ main:
     url: /year-archive
   - title: "category"
     url: /category-archive
+  - title: "search"
+    url: /search
