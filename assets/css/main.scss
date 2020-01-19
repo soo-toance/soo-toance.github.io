@@ -5,13 +5,12 @@
 @charset "utf-8";
 
 /* system typefaces */
-$serif: Georgia, Times, serif !default;
-$sans-serif:  "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+$font-custom:  "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
-$global-font-family: $sans-serif !default;
-$header-font-family: $sans-serif !default;
+$global-font-family: $font-custom !default;
+$header-font-family: $font-custom !default;
+$link-color: red !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
