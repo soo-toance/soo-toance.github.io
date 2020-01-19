@@ -4,12 +4,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-
-$global-font-family : 'Nanum Gothic', sans-serif;
-$header-font-family : 'Nanum Gothic', sans-serif;
-$link-color: red;
-
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+$global-font-family : 'Nanum Gothic', sans-serif;
+$header-font-family : 'Nanum Gothic', sans-serif;
+$link-color: red;
