@@ -1,6 +1,6 @@
 ---
-published: false
-permalink: /algorithm-cycle-detection
+published: true
+permalink: /algorithm/cycle-detection
 comments: true
 categories:
   - algorithm
