@@ -26,7 +26,7 @@ baseurl                  : ""
 repository               : "soo-toance/soo-toance.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : ":eyes:"
+masthead_title           : ":house:"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -109,13 +109,13 @@ analytics:
 author:
   name             : "soo.toance"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**탐구**하는 것을 좋아합니다."
+  bio              : "developer"
   location         : "Seoul"
   email            : "soo.toance@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:soo.toance@gmail.com
+      # url: mailto:soo.toance@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
