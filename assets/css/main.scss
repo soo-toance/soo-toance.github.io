@@ -11,7 +11,7 @@ $font-custom:  "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Seg
 $global-font-family: $font-custom !default;
 $header-font-family: $font-custom !default;
 $link-color: #778899 !default;
-$masthead-link-color: #778899 !default;
+$masthead-link-color: #6080A0 !default;
 
 /* default syntax highlighting (base16) */
 $base00: #263238 !default;
@@ -30,6 +30,11 @@ $base0c: #89ddff !default;
 $base0d: #82aaff !default;
 $base0e: #c792ea !default;
 $base0f: #ff5370 !default;
+
+.page__footer {
+  color: #778899 !important; // override
+}
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
