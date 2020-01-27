@@ -200,7 +200,7 @@ For each test case, output the string meeting the criteria. If no answer exists,
   - inverse point부터 해서 역순으로 배열한다. 
     - [8, 3, 4, 11] 
 
-- 알고리즘을 설계하는데 있어서 주어진 input을 가지고 시작하지 말고,임의의 input(예를 들면, 12345)를 가지고 규칙을 찾아보는 것자. 
+- 알고리즘을 설계하는데 있어서 주어진 input을 가지고 시작하지 말고,임의의 input(예를 들면, 12345)를 가지고 규칙을 찾아보는 습관을 가지자. 
 
 - testcase는 최대한 많이 돌려보고 `submit`을 하자. 
 
