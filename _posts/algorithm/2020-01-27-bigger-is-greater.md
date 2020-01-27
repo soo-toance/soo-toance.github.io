@@ -34,7 +34,7 @@ For each test case, output the string meeting the criteria. If no answer exists,
 
 - 방법 
   - string을 char로 쪼개어서 int배열로 만든다. 
-  ![1_1.JPG]({{site.baseurl}}/_posts/algorithm/1_1.JPG)
+  ![1_1.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_1_1.JPG)
 
   - 뒷자리부터 시작해서
     - 늘어나는 수를 찾는다. 
