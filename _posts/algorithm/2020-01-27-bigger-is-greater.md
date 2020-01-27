@@ -1,9 +1,11 @@
 ---
-published: false
+published: true
 permalink: /algorithm/bigger-is-greater
 comments: true
 categories:
   - algorithm
+tags: null
+title: '[HackerRank] Bigger is Greater'  
 ---
 HackerRank : bigger-is-greater
 
@@ -40,11 +42,11 @@ For each test case, output the string meeting the criteria. If no answer exists,
     - 늘어나는 수를 찾는다. 
     - 그리고 그 두 자리수를 바꾼다. 
     - 나머지 부분은 정렬한다. 
-    ![1_3.JPG]({{site.baseurl}}/_posts/algorithm/1_3.JPG)
+    ![1_3.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_1_3.JPG)
 
     
   - 마지막에 다시 int배열을 char배열로 바꾼다. 
-  ![1_4.JPG]({{site.baseurl}}/_posts/algorithm/1_4.JPG)
+  ![1_4.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_1_4.JPG)
 
 
 - 결과  
@@ -97,19 +99,19 @@ For each test case, output the string meeting the criteria. If no answer exists,
 (2) 두번째 풀이 (정답)
 - 방법 
   - string을 char로 쪼개어서 int배열로 만든다. 
-  ![2_1.JPG]({{site.baseurl}}/_posts/algorithm/2_1.JPG)
+  ![2_1.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_2_1.JPG)
 
   - 뒷자리부터 시작해서 늘어나는 수를 찾는다.
-  ![2_2.JPG]({{site.baseurl}}/_posts/algorithm/2_2.JPG)
+  ![2_2.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_2_2.JPG)
   
   - 늘어나는 수부터 시작해서 있는 수들 중에서 늘어나는 수보다 크고 가장 작은 수를 찾아서 바꾼다. 
-  ![2_4.JPG]({{site.baseurl}}/_posts/algorithm/2_4.JPG)
+  ![2_4.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_2_4.JPG)
 
   - 나머지를 정렬한다. 
-  ![2_5.JPG]({{site.baseurl}}/_posts/algorithm/2_5.JPG)
+  ![2_5.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_2_5.JPG)
   
   - 마지막에 다시 int배열을 char배열로 바꾼다. 
-  ![2_6.JPG]({{site.baseurl}}/_posts/algorithm/2_6.JPG)
+  ![2_6.JPG]({{site.baseurl}}/assets/images/algorithm/bigger-is-greater_2_6.JPG)
   
 - 결과  
   - 테스트 케이스 all 통과 
