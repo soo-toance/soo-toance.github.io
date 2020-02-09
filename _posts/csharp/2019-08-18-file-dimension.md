@@ -1,15 +1,16 @@
 ---
 permalink: /csharp/file-dimensions
-title: "[C#] 파일의 가로/세로 픽셀 계산"
+title: '[C#] 파일의 가로/세로 픽셀 계산'
 comments: true
 categories:
   - csharp
 tags:
   - dimension
   - pixel
+published: true
 ---
 
-파일의 가로 세로 픽셀 수를 계산하기 위해서는 이미지로 변환 후 계산해햐 한다.
+파일의 가로 세로 픽셀 수를 계산하기 위해서는 이미지로 변환 후 계산해야 한다.
 
 
 ## Reference
