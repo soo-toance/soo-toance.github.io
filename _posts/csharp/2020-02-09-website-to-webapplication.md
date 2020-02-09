@@ -34,13 +34,14 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
 ### Step2 : 새로운 WebApplication Project 추가 
 1. Step1의 프로젝트에서 다시 새로운 Web Application Project 추가 
   ![Step2_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_1.png){: width="=60%"}     
-    
+
+2. '웹 응용 프로그램' 선택
   ![Step2_2.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_2.png){: width="=60%"}  
 
-2. '빈 프로젝트' 및 테스트 프로젝트 추가를 선택 후 생성 
-![Step2_3.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_3.png){: width="=60%"}  
+3. '빈 프로젝트' 및 테스트 프로젝트 추가를 선택 후 생성 
+  ![Step2_3.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_3.png){: width="=60%"}  
 
-3. 생성된 Web.config 삭제 
+4. 생성된 Web.config 삭제 
 
 
 
