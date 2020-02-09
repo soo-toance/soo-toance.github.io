@@ -21,7 +21,7 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
 
 ### Step1 : WebSite Project 정리
 1. WebSite Project를 열기 
-![Step1_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_1.png)  
+![Step1_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_1.png){: width="=60%" height="100"}  
 
 2. `.sln`파일로 저장 (Ctrl + shift + s) 후 빌드 (Ctrl + shift + b)
 ![Step1_2.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_2.png)
