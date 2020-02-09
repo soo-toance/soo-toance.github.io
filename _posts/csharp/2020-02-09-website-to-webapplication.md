@@ -12,7 +12,6 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
     
   
 ## 계기 
----
 [마이크로소프트 공식 문서](https://docs.microsoft.com/ko-kr/previous-versions/dd547590(v=vs.100))에 따르면 **WAP**가 **WSP**보다 무조건 성능이 좋은 Project는 아닙니다.   
 하지만, **WSP**는 실시간으로 컴파일이 이루어져 테스트코드 작성에 어려운 부분들이 있어서 테스트코드를 작성하기 위해서라도 **WAP**로 전환이 필요해보였습니다.   
 
@@ -20,7 +19,6 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
 
 
 ## 방법 
----
 변환하는 방법은 이 [문서](https://devblogs.microsoft.com/aspnet/converting-a-web-site-project-to-a-web-application-project/)를 참고했습니다. 
 
 ### Step1 : WebSite Project 정리
@@ -61,7 +59,6 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
   
   
 ## 참고문서 
----
 - [Web Application Projects versus Web Site Projects](https://docs.microsoft.com/ko-kr/previous-versions/dd547590(v=vs.100))
 - [unit-testing-asp-net-web-site-project-code-stored-in-app-code](https://stackoverflow.com/questions/1198555/unit-testing-asp-net-web-site-project-code-stored-in-app-code)
 - [converting-a-web-site-project-to-a-web-application-project](https://devblogs.microsoft.com/aspnet/converting-a-web-site-project-to-a-web-application-project/)
