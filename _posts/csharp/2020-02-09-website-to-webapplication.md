@@ -21,10 +21,10 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
 
 ### Step1 : WebSite Project 정리
 1. WebSite Project를 열기 
-![Step1_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_1.png)  
+![Step1_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_1.png){: width="=60%"}    
 
 2. `.sln`파일로 저장 (Ctrl + shift + s) 후 빌드 (Ctrl + shift + b)
-![Step1_2.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_2.png)
+![Step1_2.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step1_2.png){: width="=60%"}  
 
 3. 빌드 후 에러가 발생하지 않도록 기능 수정 
   - 경고로 나오는 메시지들은 이 단계에서는 일단 무시해도 괜찮음. 
@@ -33,12 +33,11 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
 
 ### Step2 : 새로운 WebApplication Project 추가 
 1. Step1의 프로젝트에서 다시 새로운 Web Application Project 추가 
-  ![Step2_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_1.png)  
-
-  ![Step2_2.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_2.png)
+  ![Step2_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_1.png){: width="=60%"}   
+  ![Step2_2.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_2.png){: width="=60%"}  
 
 2. '빈 프로젝트' 및 테스트 프로젝트 추가를 선택 후 생성 
-![Step2_3.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_3.png)
+![Step2_3.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step2_3.png){: width="=60%"}  
 
 3. 생성된 Web.config 삭제 
 
@@ -46,7 +45,7 @@ WebSite Project(WSP)를 Web Application Project(WAP)로 변환했던 경험을 �
 
 ### Step3 : WebApplication으로 이관 
 1. WebSite Project의 App_Code를 WebApplication으로 copy&paste 후 웹 응용프로그램으로 변환 후 빌드 이루어지는 지 확인 
-![Step3_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step3_1.png)
+![Step3_1.png]({{site.baseurl}}/assets/images/csharp/website-to-webapplication_Step3_1.png){: width="=60%"}  
 
 2. 나머지 파일들도 순차적으로 copy&paste 후 웹 응용프로그램으로 변환
 - 전체 copy & paste 후 확인하지 말고 일부 copy & paste 후 확인하는 것이 좋음. 
