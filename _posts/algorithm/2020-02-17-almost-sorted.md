@@ -17,7 +17,7 @@ Determine whether one, both or neither of the operations will complete the task.
 
 
 ## Solution
-(1) 첫 번째 풀이 (오답)
+### (1) 첫 번째 풀이 (오답)
 
 - 분류  
   - 순차 (1 2 3 4 5)
@@ -114,7 +114,7 @@ Determine whether one, both or neither of the operations will complete the task.
 ```
 
 
-(2) 두번째 풀이 (정답)
+### (2) 두번째 풀이 (정답)
 - 분류 
   - 순차 (1 2 3 4 5)
   - 비순차 (5 4 3 2 1) 
