@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /algorithm/almost-sorted
 comments: true
 categories:
