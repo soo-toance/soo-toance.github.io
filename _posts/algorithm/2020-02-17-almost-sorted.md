@@ -130,7 +130,7 @@ Determine whether one, both or neither of the operations will complete the task.
     - 블럭의 마지막 인덱스(Pos)을 저장한다. 
   2. 정렬/비정렬 판단
     - 블럭 개수 1개 : `if (breakList.Count == 1)`
-    
+
     - 블럭 개수 2개 : `else if (breakList.Count == 2)`     
       - 순차 + 비순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade != 'U'....`  
       - 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U'.....`  
