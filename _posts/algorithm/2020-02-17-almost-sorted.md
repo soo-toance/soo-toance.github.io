@@ -128,15 +128,15 @@ Determine whether one, both or neither of the operations will complete the task.
   1. 블럭 찾기 
     - 기준값(Grade = C)을 기준으로 순차 블럭(Grade = U), 비순차 블럭(Grade = D)을 찾는다. 
     - 블럭의 마지막 인덱스(Pos)을 저장한다. 
-  2. 정렬/비정렬 판단
-    (1) 블럭 개수 1개 : `if (breakList.Count == 1)` 
+  2. 정렬/비정렬 판단  
+    - 블럭 개수 1개 : `if (breakList.Count == 1)` 
 
-    (2) 블럭 개수 2개 : `else if (breakList.Count == 2)`     
+    - 블럭 개수 2개 : `else if (breakList.Count == 2)`     
       - 순차 + 비순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade != 'U'....`  
       - 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U'.....`  
       - 비순차 + 순차 : `else if (breakList[0].Grade == 'D' && breakList[1].Grade == 'U'....`  
 
-    (3) 블럭 개수 3개 : `else if (breakList.Count == 3)`  
+    - 블럭 개수 3개 : `else if (breakList.Count == 3)`  
       - 순차 + 비순차 + 순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade == 'D' && breakList[2].Grade != 'D'....`
       - 순차 + 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U' && breakList[2].Grade == 'U'....`
       
