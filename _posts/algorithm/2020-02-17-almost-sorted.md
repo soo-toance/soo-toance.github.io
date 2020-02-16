@@ -129,6 +129,7 @@ Determine whether one, both or neither of the operations will complete the task.
     - 기준값(Grade = C)을 기준으로 순차 블럭(Grade = U), 비순차 블럭(Grade = D)을 찾는다. 
     - 블럭의 마지막 인덱스(Pos)을 저장한다. 
   2. 정렬/비정렬 판단  
+
     - 블럭 개수 1개 : `if (breakList.Count == 1)` 
 
     - 블럭 개수 2개 : `else if (breakList.Count == 2)`     
