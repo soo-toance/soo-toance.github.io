@@ -131,12 +131,12 @@ Determine whether one, both or neither of the operations will complete the task.
   2. 정렬/비정렬 판단
     - 블럭 개수 1개 : `if (breakList.Count == 1)`
     - 블럭 개수 2개 : `else if (breakList.Count == 2)`
-      - 순차 + 비순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade != 'U' && (arr[breakList[1].Pos -1] < arr[breakList[0].Pos - 1]) && arr[breakList[1].Pos - 1] > arr[breakList[0].Pos - 2])`
-      - 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U' && (arr[breakList[0].Pos -1] < arr[breakList[1].Pos - 1]) && arr[breakList[0].Pos] > arr[breakList[0].Pos - 2] && arr[breakList[0].Pos - 1] < arr[breakList[0].Pos + 1])`
-      - 비순차 + 순차 : `else if (breakList[0].Grade == 'D' && breakList[1].Grade == 'U' && (arr[0] < arr[breakList[0].Pos]))`
+       - 순차 + 비순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade != 'U'....`
+       - 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U'.....`
+      - 비순차 + 순차 : `else if (breakList[0].Grade == 'D' && breakList[1].Grade == 'U'....`
     - 블럭 개수 3개 : `else if (breakList.Count == 3)`
-      - 순차 + 비순차 + 순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade == 'D' && breakList[2].Grade != 'D' && (arr[breakList[1].Pos -1] < arr[breakList[0].Pos - 1]) && (arr[breakList[1].Pos -1] < arr[breakList[2].Pos - 1]))`
-      - 순차 + 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U' && breakList[2].Grade == 'U' && (arr[breakList[1].Pos] > arr[breakList[0].Pos - 2]) && (arr[breakList[1].Pos] < arr[breakList[0].Pos]) && (arr[breakList[0].Pos - 1] > arr[breakList[1].Pos]) && (arr[breakList[0].Pos - 1] < arr[breakList[2].Pos -1]))`
+       - 순차 + 비순차 + 순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade == 'D' && breakList[2].Grade != 'D'....`
+       - 순차 + 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U' && breakList[2].Grade == 'U'....`
       
       
 - 결론 
@@ -249,12 +249,10 @@ Determine whether one, both or neither of the operations will complete the task.
 
 
 ## Learning... 
-- 알고리즘을 설계하는데 있어서 5개 input (1 2 3 4 5)를 가지고 설계를 했는데 그러다 보니 순차 + 순차 + 순차 케이스를 찾는데 시간이 꽤 걸린 것 같다. 
-- 기본적으로 6개 input을 가지고 설계를 해야할 것 같다. 
+- 알고리즘을 설계하는데 있어서 5개 input (1 2 3 4 5)를 가지고 설계를 했는데 그러다 보니 순차 + 순차 + 순차 케이스를 찾는데 시간이 꽤 걸렸다. 
 . 
 
 
 
 ## Reference
 - [HackerRank](https://www.hackerrank.com/challenges/almost-sorted/problem)
-- [Youtube](https://www.youtube.com/watch?v=zGQq3HGBTXg)
