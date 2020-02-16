@@ -111,10 +111,10 @@ Determine whether one, both or neither of the operations will complete the task.
                 Console.WriteLine("no");
             }
         }
-```
+```  
 
 
-### (2) 두번째 풀이 (정답)
+### (2) 두 번째 풀이 (정답)
 - 분류 
   - 순차 (1 2 3 4 5)
   - 비순차 (5 4 3 2 1) 
