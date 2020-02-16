@@ -133,8 +133,8 @@ Determine whether one, both or neither of the operations will complete the task.
     - 블럭 개수 2개 : `else if (breakList.Count == 2)`
        - 순차 + 비순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade != 'U'....`
        - 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U'.....`
-      - 비순차 + 순차 : `else if (breakList[0].Grade == 'D' && breakList[1].Grade == 'U'....`
-    - 블럭 개수 3개 : `else if (breakList.Count == 3)`
+       - 비순차 + 순차 : `else if (breakList[0].Grade == 'D' && breakList[1].Grade == 'U'....`
+  - 블럭 개수 3개 : `else if (breakList.Count == 3)`
        - 순차 + 비순차 + 순차 : `if (breakList[0].Grade == 'U' && breakList[1].Grade == 'D' && breakList[2].Grade != 'D'....`
        - 순차 + 순차 + 순차 : `else if (breakList[0].Grade == 'U' && breakList[1].Grade == 'U' && breakList[2].Grade == 'U'....`
       
