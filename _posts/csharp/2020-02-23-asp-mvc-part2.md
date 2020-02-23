@@ -4,7 +4,8 @@ permalink: /csharp/asp-mvc-part2
 comments: true
 categories:
   - csharp
-  - razor
+tags:
+  - entityframework
 title: '[C#] ASP.NET MVC Part2 : EntityFramework'
 ---
 [개발토끼 youtube](https://www.youtube.com/channel/UCuuyTE8bBNYCujb7mzf8H7w)의 ASP.NET MVC 시리즈를 보고 스터디한 경험을 기록하였습니다.

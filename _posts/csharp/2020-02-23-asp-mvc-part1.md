@@ -4,6 +4,7 @@ permalink: /csharp/asp-mvc-part1
 comments: true
 categories:
   - csharp
+tags:
   - razor
 title: '[C#] ASP.NET MVC Part1 : ASP.NET 기초와 Razor문법'
 ---
