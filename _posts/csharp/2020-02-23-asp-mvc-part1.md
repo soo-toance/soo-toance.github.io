@@ -38,12 +38,14 @@ title: '[C#] ASP.NET MVC Part1 : ASP.NET 기초와 Razor문법'
         
 
 ## ASP.NET와 ASP.NET Core 
-(1) 공통점 : 기능상 모두 비슷함  
+(1) 공통점 : 기능상 모두 비슷함    
+
 (2) 차이점 : 
 - ASP.NET : window 
   - System.Net.XXXX 사용 
 - ASP.NET Core : linux, max, window 
-  - System.Net.XXXX 사용하지 않음 => 속도 차이가 남.   
+  - System.Net.XXXX 사용하지 않음 => 속도 차이가 남.  
+
 (3) 버전 
 - ASP.NET 4.6.1 - ASP.NET MVC 5
 - ASP.NET 5 - ASP.NET MVC 6 OR Core  
@@ -77,7 +79,7 @@ else
 }
 ```
 
-- (string) -> (int), ToString() 가능  
+- `(string)` -> `(int)`, `ToString()` 가능  
 
 ```
 @for (var index = 1; index < 10; index++)
