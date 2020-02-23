@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /csharp/website-to-webapplication
 comments: true
 categories:
@@ -79,10 +79,10 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
     - add-migration
     - update-database 
     
-    ![step1.png]({{site.baseurl}}/}/assets/images/csharp/asp-mvc-part3/step1.png){: width="=60%"}  
+    ![step1.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step1.png){: width="=60%"}  
    
    => 결과 
-  ![step2.png]({{site.baseurl}}/}/assets/images/csharp/asp-mvc-part3/step2.png){: width="=60%"}  
+  ![step2.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step2.png){: width="=60%"}  
 
 
 
@@ -138,7 +138,7 @@ public IActionResult Register(User model)
 ```
 
 => 결과 
-![step3.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3/step3.png){: width="=60%"}  
+![step3.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step3.png){: width="=60%"}  
 
 
 ## 로그인 만들기 
@@ -231,8 +231,8 @@ public IActionResult Register(User model)
 </form>
    ```
 => 결과 
-![step4.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3/step4.png){: width="=60%"}    
-![step5.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3/step5.png){: width="=60%"}  
+![step4.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step4.png){: width="=60%"}    
+![step5.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step5.png){: width="=60%"}  
 
 
    
