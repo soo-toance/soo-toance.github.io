@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /csharp/asp-mvc-part2
 comments: true
 categories:
