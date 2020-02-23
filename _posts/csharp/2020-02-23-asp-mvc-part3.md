@@ -26,11 +26,10 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
         public string UserId { get; set; }
         public string UserPassword { get; set; }
     }
-	```  
+    ```  
 
-      
     ```c#
-	public class Note
+    public class Note
     {
         /// <summary>
         /// 게시글 번호 
@@ -59,13 +58,12 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
         [ForeignKey("UserNo")] // 외래키, virtual은 lazy loading
         public virtual User User { get; set; }
     }  
-
- 	```
+    ```
   
   - DBContext  
-  ```c#
-  public class AspNoteDbContext : DbContext
-  {
+    ```c#
+    public class AspNoteDbContext : DbContext
+    {
         public DbSet<User> Users { get; set;}
         public DbSet<Note> Notes { get; set; }
 
@@ -74,9 +72,8 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
             optionsBuilder.UseSqlServer(@"{connectionString}");
         }
 
-  }  
-
-  ```  
+    }  
+    ```  
   
   - 실제 테이블 추가 (Nuget Package Console)
     - add-migration
