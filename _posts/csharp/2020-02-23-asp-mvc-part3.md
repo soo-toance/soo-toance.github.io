@@ -27,7 +27,8 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
         public string UserPassword { get; set; }
     }
 	```  
-    
+
+      
     ```c#
 	public class Note
     {
