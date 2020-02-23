@@ -57,13 +57,14 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
 
         [ForeignKey("UserNo")] // 외래키, virtual은 lazy loading
         public virtual User User { get; set; }
-   	 }
-	```
+    }  
+
+ 	```
   
   - DBContext  
   ```c#
   public class AspNoteDbContext : DbContext
-    {
+  {
         public DbSet<User> Users { get; set;}
         public DbSet<Note> Notes { get; set; }
 
@@ -72,7 +73,8 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
             optionsBuilder.UseSqlServer(@"{connectionString}");
         }
 
-    }
+  }  
+
   ```  
   
   - 실제 테이블 추가 (Nuget Package Console)
@@ -81,7 +83,8 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
     
     ![step1.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step1.png){: width="=60%"}  
    
-   => 결과 
+   => 결과   
+
   ![step2.png]({{site.baseurl}}/assets/images/csharp/asp-mvc-part3-step2.png){: width="=60%"}  
 
 
@@ -90,26 +93,26 @@ title: '[C#] ASP.NET MVC Part3 : 회원가입, 로그인, 로그오프'
 ## 회원가입 만들기  
 (1) Controller 
   ```c#
-  [HttpPost]
-public IActionResult Register(User model)
-{
-    // ModelState.IsValid : Model에 정의한 값 
-    if (ModelState.IsValid)
+    [HttpPost]
+    public IActionResult Register(User model)
     {
-        using (var db = new AspNoteDbContext())
+        // ModelState.IsValid : Model에 정의한 값 
+        if (ModelState.IsValid)
         {
-            db.Users.Add(model); // Memory
-            db.SaveChanges(); // Database 
+            using (var db = new AspNoteDbContext())
+            {
+                db.Users.Add(model); // Memory
+                db.SaveChanges(); // Database 
+            }
+            return RedirectToAction("Index", "Home");
         }
-        return RedirectToAction("Index", "Home");
-    }
 
-    return View(model);
-}
-```
+        return View(model);
+    }
+  ```
 
 (2) View 
-```chtml
+```html
 <form class="form-horizontal" method="post" asp-controller="Account" asp-action="Register">
     <div class="form-group">
         <label>사용자 ID</label>
@@ -155,7 +158,7 @@ public IActionResult Register(User model)
 (2) ViewModel
   - 로그인 시에는 `사용자 이름`이 필수 입력이 아니기 때문에 로그인 시에만 사용하는 Model이 별도 필요. 
   ```c#
-  public class LoginViewModel
+    public class LoginViewModel
     {
         /// <summary>
         /// 사용자 ID
@@ -174,42 +177,42 @@ public IActionResult Register(User model)
     
 (3) Controller 
   ```c#
-  [HttpPost]
-        public IActionResult Login(LoginViewModel model)
+    [HttpPost]
+    public IActionResult Login(LoginViewModel model)
+    {
+        if (ModelState.IsValid)
         {
-            if (ModelState.IsValid)
+            using (var db = new AspNoteDbContext())
             {
-                using (var db = new AspNoteDbContext())
+                // Linq - 메서드 체이닝 
+                // => : A Go to B 
+                // var user = db.Users
+                //     .FirstOrDefault(u => u.UserId == model.UserId && u.UserPassword == model.UserPassword);
+
+                // == : Memory 누수가 발생하기 때문에 equals를 활용해야 함. 
+                var user = db.Users
+                    .FirstOrDefault(u => u.UserId.Equals(model.UserId) && u.UserPassword.Equals(model.UserPassword));
+
+                if (user != null)
                 {
-                    // Linq - 메서드 체이닝 
-                    // => : A Go to B 
-                    // var user = db.Users
-                    //     .FirstOrDefault(u => u.UserId == model.UserId && u.UserPassword == model.UserPassword);
+                    // HttpContext.Session.SetInt32(key, value); - key: 식별자 
+                    HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
 
-                    // == : Memory 누수가 발생하기 때문에 equals를 활용해야 함. 
-                    var user = db.Users
-                        .FirstOrDefault(u => u.UserId.Equals(model.UserId) && u.UserPassword.Equals(model.UserPassword));
-
-                    if (user != null)
-                    {
-                        // HttpContext.Session.SetInt32(key, value); - key: 식별자 
-                        HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
-
-                        // 로그인에 성공 
-                        return RedirectToAction("LoginSuccess", "Home");
-                    }
+                    // 로그인에 성공 
+                    return RedirectToAction("LoginSuccess", "Home");
                 }
             }
-
-            // 로그인에 실패
-            ModelState.AddModelError(string.Empty, "사용자 ID 혹은 비밀번호가 올바르지 않습니다.");
-                    
-            return View(model);
         }
+
+        // 로그인에 실패
+        ModelState.AddModelError(string.Empty, "사용자 ID 혹은 비밀번호가 올바르지 않습니다.");
+                
+        return View(model);
+    }
   ```
   
   (4) View 
-   ```chtml
+   ```html
    <form class="form-horizontal" method="post" asp-controller="Account" asp-action="Login">
     <div class="text-danger" asp-validation-summary="ModelOnly"></div>
     <div class="form-group">
@@ -241,23 +244,23 @@ public IActionResult Register(User model)
    
  [참고] Session 미들웨어 추가 
  ```c#
- // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            // DI 의존성 주입 - ASP.NET MVC 4,5에서는 Unity Nuget Package 설치가 필요했었음 
-            // Session - 서비스에 등록함
-            services.AddSession();
+    // This method gets called by the runtime. Use this method to add services to the container.
+    public void ConfigureServices(IServiceCollection services)
+    {
+        // DI 의존성 주입 - ASP.NET MVC 4,5에서는 Unity Nuget Package 설치가 필요했었음 
+        // Session - 서비스에 등록함
+        services.AddSession();
 
-            // Identity
-            // Web API 관련 기능
-        }
+        // Identity
+        // Web API 관련 기능
+    }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
-            app.UseSession(); // Application에서 사용하겠다. 
- 
-        }
+    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    {
+        app.UseSession(); // Application에서 사용하겠다. 
+
+    }
  ```
 
 
