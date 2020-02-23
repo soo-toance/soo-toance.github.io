@@ -38,12 +38,12 @@ title: '[C#] ASP.NET MVC Part1 : ASP.NET 기초와 Razor문법'
         
 
 ## ASP.NET와 ASP.NET Core 
-(1) 공통점 : 기능상 모두 비슷함
+(1) 공통점 : 기능상 모두 비슷함  
 (2) 차이점 : 
 - ASP.NET : window 
   - System.Net.XXXX 사용 
 - ASP.NET Core : linux, max, window 
-  - System.Net.XXXX 사용하지 않음 => 속도 차이가 남. 
+  - System.Net.XXXX 사용하지 않음 => 속도 차이가 남.   
 (3) 버전 
 - ASP.NET 4.6.1 - ASP.NET MVC 5
 - ASP.NET 5 - ASP.NET MVC 6 OR Core  
@@ -54,7 +54,8 @@ title: '[C#] ASP.NET MVC Part1 : ASP.NET 기초와 Razor문법'
         
 
 ## Razor Syntax
-- `@` 사용 
+- `@` 사용   
+
 ```c#
 @{
   var name = "홍길동";
@@ -63,7 +64,8 @@ title: '[C#] ASP.NET MVC Part1 : ASP.NET 기초와 Razor문법'
 <h1>@name 님 환영합니다. </h1>
 ```
 
-- `if`, `for`, `foreach` 가능
+- `if`, `for`, `foreach` 가능  
+
 ```c#
 @if (num ==10)
 {
@@ -75,7 +77,8 @@ else
 }
 ```
 
-- (string) -> (int), ToString() 가능
+- (string) -> (int), ToString() 가능  
+
 ```
 @for (var index = 1; index < 10; index++)
 {
@@ -93,7 +96,8 @@ else
         
         
 ## Controller에서 View로 데이터 전달하기 
-(1) 첫 번째 방법 
+(1) 첫 번째 방법   
+
 ```c#
 public IActionResult Index()
 {
@@ -112,7 +116,8 @@ public IActionResult Index()
 ```
 
 
-(2) 두 번째 방법 
+(2) 두 번째 방법   
+
 ```c#
 public IActionResult Index()
 {
@@ -134,7 +139,8 @@ public IActionResult Index()
 ```
 
 
-(3) 세 번째 방법 
+(3) 세 번째 방법   
+
 ```c#
 public IActionResult Index()
 {
