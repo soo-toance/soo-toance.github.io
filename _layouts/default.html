@@ -23,6 +23,12 @@
       {{ content }}
     </div>
 
+    {% if page.comments %}
+      <div id="post-disqus" class="container"> 
+        {% include disqus_comments.html %} 
+      </div> 
+    {% endif %}
+
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
