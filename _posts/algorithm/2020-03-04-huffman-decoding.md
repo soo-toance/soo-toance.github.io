@@ -37,7 +37,7 @@ def decodeHuff(root, text):
 
 ## Learning... 
 - c#을 지원하지 않았던 문제라 오랜만에 python으로 문제를 풀었다. 
-- 로직 자체는 간단했지만 python 문법 자체가 너무 오랜만이었다. (`printf..`나 `if..elif')
+- 로직 자체는 간단했지만 python 문법 자체가 너무 오랜만이었다. (`printf..`나 `if..elif`)
 
 
 
