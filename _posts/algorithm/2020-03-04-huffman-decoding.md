@@ -4,8 +4,7 @@ permalink: /algorithm/almost-sorted
 comments: true
 categories:
   - algorithm
-title:
-  - HackerRank
+title: '[HackerRank] Huffman Decoding'
 Tree: Huffman Decoding
 ---
 HackerRank : Tree: Huffman Decoding
