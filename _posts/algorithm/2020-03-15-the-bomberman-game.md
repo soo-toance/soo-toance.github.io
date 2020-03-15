@@ -22,9 +22,7 @@ grid: an array of strings that represents the grid
 (1) 첫번째 풀이 (오답) 
 - 방법 
   - 짝수일 경우, 전체 String 폭탄 설치 
-  - 홀수일 경우, 3,7,11회차는 
-    - 3,7,11회차는  `detonateBomb(grid);` 1회 call
-    - 5,9,13회차는  `detonateBomb(grid);` 2회 call
+  - 홀수일 경우, bomberMan(n-2, grid) 호출
 
 - 소스코드 
 ```c#
@@ -98,10 +96,12 @@ grid: an array of strings that represents the grid
     }
 ```
 
-(1) 두번째 풀이 (정답) 
+(2) 두번째 풀이 (정답) 
 - 방법 
   - 짝수일 경우, 전체 String 폭탄 설치 
-  - 홀수일 경우, bomberMan(n-2, grid) 호출
+  - 홀수일 경우, 3,7,11회차는 
+    - 3,7,11회차는  `detonateBomb(grid);` 1회 call
+    - 5,9,13회차는  `detonateBomb(grid);` 2회 call
 
 - 결과  
   - `Terminated due to timeout`
@@ -197,7 +197,7 @@ grid: an array of strings that represents the grid
 
 ## Learning... 
 - c#의 경우, string의 N번째 index를 가져오려면 `char[]` 혹은 `stringbuilder`를 활용해야하는 것을 배웠다. 
-([링크]https://soo-toance.github.io/csharp/string-replaceat)
+    - [링크](https://soo-toance.github.io/csharp/string-replaceat)
 
 
 ## Reference
