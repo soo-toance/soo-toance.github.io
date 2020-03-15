@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /csharp/string-replaceat
 comments: true
 categories:
