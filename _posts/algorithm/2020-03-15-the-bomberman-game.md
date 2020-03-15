@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /algorithm/the-bomberman-game
 comments: true
 categories:
