@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /algorithm/find-maximum-index-product
 comments: true
 categories:
