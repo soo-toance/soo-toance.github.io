@@ -18,7 +18,7 @@ title: '[BaekJoon] 1543. # 문서 검색'
 ## Solution
 (1) 첫번째 풀이 (정답) : 메모리 14408KB, 112ms
 - indexOf(String str, int fromIndex) 사용해서 문자열 찾으면 그 다음번부터 다시 문자열 찾음
-```
+
 ```java
 import java.util.Scanner; 
 
@@ -48,6 +48,7 @@ public class Main {
 
 (2) 두번째 풀이 (정답) : 메모리 14384KB, 112ms 
 - substring 사용해서 검색 불필요한 부분 삭제 후 다시 검색 
+
 ```java
 import java.util.Scanner; 
 
@@ -77,6 +78,7 @@ public class Main {
 
 (3) 세번째 풀이 (정답) : 메모리 14880KB, 112ms 
 - substring 사용해서 document 일부분 추출하여 직접 searchString과 비교 
+
 ```java
 import java.util.Scanner; 
 
