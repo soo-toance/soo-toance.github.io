@@ -1,5 +1,3 @@
-
-
 ---
 published: true
 permalink: /algorithm/baekjoon-acmicpc-1543
