@@ -103,7 +103,7 @@ public class Main {
 ```
 
 ## Learning... 
-- java 문법 : 처음 시도에 Compile Error가 발생햇던 것들 
+- java 문법 : 처음 시도에 Compile Error가 발생했던 코드
   1. string 대신 String 
   2. IndexOf 대신 indexOf
   3. length 대신 length() 
