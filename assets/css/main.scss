@@ -39,3 +39,12 @@ $base0f: #ff5370 !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+/* system typefaces */
+$font-custom:  "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
+$global-font-family: $font-custom !default;
+$header-font-family: $font-custom !default;
+$type-size-4 : 1em !default; // 제목 글자크기 수정 
