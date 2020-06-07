@@ -22,6 +22,7 @@ title: '[java] BufferedReader'
 
 2) Usage
 - 키보드로부터 입력받을 때 
+
 ```java
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -30,6 +31,7 @@ String book = br.readLine();
 ```
 
 - 파일로부터 입력받을 때 
+
 ```java
 BufferedReader br = new BufferedReader(new FileReader("file.txt"));
 
