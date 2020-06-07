@@ -10,7 +10,7 @@ title: '[java] Hashtable'
 자바 Hashtable  
 
 ## Reference
-- [Docs](https://stackoverflow.com/questions/9367119/replacing-a-char-at-a-given-index-in-string/9367179) 
+- [Docs](https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html) 
 
 
 ## Notes
@@ -40,4 +40,3 @@ title: '[java] Hashtable'
       -  `numbers.containsKey("first");`
     - `containsValue(Object value)` : 특정 Value가 있는 지 확인 
       - `numbers.containsValue("first");`
-
