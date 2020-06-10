@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 permalink: /java/stream
 comments: true
 categories:
